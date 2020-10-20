@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app.css">
+    <title>Javascript Basic Projects</title>
+</head>
+<body>
+    <div class="container-1">
+        <h1>Challenge 1: Your Age in Days</h1>
+        <div class="flex-box-1">
+            <button id="click" class="btn btn-primary">Click Me</button>
+            <button id="reset" class="btn btn-danger">Reset</button>
+        </div>
+
+        <div class="flex-box-1">
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <div class="container-2">
+        <h1>Challenge 2: Cat Generator</h1>
+        <button id="cat" class="btn btn-success">Cat Generator</button>
+
+        <div class="flex-box-2">
+            <div id="add-cat"></div>
+
+        </div>
+    </div>
+
+    <div class="container-3">
+        <h1>Challenge 3: Rock Paper Scissor</h1>
+
+        <div class="flex-box-3" id="flex-box-div">
+            <img id="rock" src="images\images.jpg" width="150px" height="150px" onclick="rpsGame(this)">
+            <img id="paper" src="images\images.png" width="150px" height="150px" onclick="rpsGame(this)">
+            <img id="scissor" src="images\images (1).jpg" width="150px" height="150px" onclick="rpsGame(this)">
+        </div>
+    </div> 
+
+    <div class="container-4">
+        <h1>Challenge 4: Button Color Changer</h1>
+        <div class="flex-box-4">
+            <form action="">
+                <select name="dropDown" onclick="colorChanger(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+            </form>
+    
+            <button class="btn btn-primary">WEE!</button>
+            <button class="btn btn-danger">YAHOO!</button>
+            <button class="btn btn-warning">GOOGLE!</button>
+            <button class="btn btn-success">FACEBOOK!</button>
+        </div>
+    </div>
+
+    <div class="container-5">
+        <h2>Challenge 5: BlackJack</h2>
+        <h3><span id="black-jack-result">Let's Play</span></h3>
+
+        <div class="flex-box-row1">
+            <div id="your-box">
+                <h2>You: <span id="your-box-result">0</span></h2>
+            </div>
+
+            <div id="dealer-box">
+                <h2>Dealer: <span id="dealer-box-result">0</span></h2>
+            </div>
+        </div>
+
+        <div class="flex-box-row2">
+            <div>
+                <button class="btn-lg btn-primary mr-2" id="hit">Hit</button>
+                <button class="btn-lg btn-warning mr-2" id="stand">Stand</button>
+                <button class="btn-lg btn-danger" id="deal">Deal</button>
+            </div>
+        </div>
+
+        <div class="flex-box-row3">
+            <table>
+                <tr>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>draws</th>
+                </tr>
+                <tr>
+                    <th><span id="wins">0</span></th>
+                    <th><span id="losses">0</span></th>
+                    <th><span id="draws">0</span></th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

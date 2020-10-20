@@ -1,0 +1,81 @@
+.container-1, .container-2,.container-3 , .container-4{
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+    width: 75%;
+    margin: 0% auto;
+}
+
+.flex-box-1, .flex-box-2 , .flex-box-3,.flex-box-4{
+    display: flex;
+    padding: 10px;
+    margin: 0% auto;
+    border: 1px solid black;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.flex-box-2 img{
+    padding: 10px;
+    box-shadow: 0px 10px 50px grey(0,0,0,0,7);
+}
+
+.flex-box-3 img{
+    margin: 10px;
+    box-shadow: 0px 10px 50px rgba(0,0,0,0,7)
+}
+
+.flex-box-3 img:hover{
+    box-shadow: 0px 10px 50px rgba(37,50,233,1);
+}
+
+.flex-box-4 button{
+    padding: 5px;
+    margin: 0% auto;
+}
+
+
+.container-5{
+    margin: 0% auto;
+    border: 1px solid black;
+    text-align: center;
+    width: 75%;
+}
+.flex-box-row1, .flex-box-row2, .flex-box-row3{
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.flex-box-row1, .flex-box-row2{
+    background: url('images/istockphoto-1046326882-612x612.jpg') center;
+    color: blanchedalmond;
+}
+
+.flex-box-row1 div{
+    border: 1px solid black;
+    padding: 3px;
+    flex: 1;
+    height: 350px;
+    text-align: center;
+}
+
+.flex-box-row1 img{
+    width: 25%;
+    padding: 10px;
+}
+
+.flex-box-row2 button{
+    padding: 10px;
+}
+
+.flex-box-row2 div{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+table ,th, td{
+    padding: 5px;
+    border: 1px solid black;
+}
