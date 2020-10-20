@@ -29,32 +29,27 @@ function generateCat(){
 // Challenge ROCK PAPER SCISSOR
 
 function rpsGame(yourChoice){
-    console.log(yourChoice);
     let humanChoice, botChoice;
     humanChoice = yourChoice.id;
-    console.log(humanChoice);
 
-    botChoice = randomChoice(randomNumber());
-    console.log('Computer Choice', botChoice);
+    botChoice = randomChoicess(randomNumberss());
 
-    results = decideWinner(humanChoice, botChoice);
-    console.log(results);
+    result = decideWinner1(humanChoice, botChoice);
 
-    message = finalMessage(results);
-    console.log(message);
+    message = finalMessage1(result);
 
     rpsFrontEnd(humanChoice, botChoice, message)
 }
 
-function randomNumber(){
+function randomNumberss(){
     return Math.floor(Math.random() * 3)
 }
 
-function randomChoice(number){
+function randomChoicess(number){
     return ['rock','paper','scissor'][number]
 }
 
-function decideWinner(yourChoice, compterChoice){
+function decideWinner1(yourChoice, compterChoice){
     let rpsDatabase = {
         'rock':{'scissor': 1, 'rock': 0.5, 'paper': 0},
         'paper':{'rock': 1, 'paper': 0.5, 'scissor': 0},
@@ -67,7 +62,7 @@ function decideWinner(yourChoice, compterChoice){
     return [yourScore,computerScore]
 }
 
-function finalMessage([yourScore]){
+function finalMessage1([yourScore]){
     if(yourScore === 0){
         return {'message':'You Lost!', 'color' : 'red'}
     }
